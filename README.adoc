@@ -1,0 +1,39 @@
+= ClojureScript pass:[</br>]HTML5 Game Programming pass:[</br>]with phaser.js
+:source-language: clojure
+:source-highlighter: coderay
+//:stem: latexmath
+:linkcss:
+:icons: font
+:imagesdir: ./img
+
+== 발표자
+
+김영태 (philos99@gmail.com)
+
+* http://www.amazon.com/gp/product/1491909048?keywords=living%20clojure&qid=1445564474&ref_=sr_1_1&s=books&sr=1-1[Living Clojure] 공동 번역 중
+
+* https://github.com/clojure-kr/clojure-complete[Clojure Complete] 공동 집필 중
+
+
+== 강연 소개
+
+* 강연 목적: HTML5 게임 프로그래밍 소개 자체가 목적이 아니라, ClojureScript에서 JavaScript
+  라이브러리를 얼마나 쉽게 불러다 쓸 수 있는가를 보여준다.
+
+* 그 일환으로 phaser.js라는 JavaScript 게임 엔진 라이브러리를 이용해 간단한 '벽돌
+  꺠기(breakout)' 프로그램을 만든다.
+
+* 그에 앞서 Clojure와 ClojureScript의 핵심적인 특징들에 대해 간단히 소개한다.
+
+:leveloffset: 1
+
+.Table of Contents
+[sidebar]
+****
+. link:clojure.adoc[Clojure 소개]
+. link:clojurescript.adoc[ClojureScript 소개]
+. link:game.adoc[HTML5 Game Programming with phaser.js]
+****
+
+:leveloffset: 0
+

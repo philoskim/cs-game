@@ -1,0 +1,231 @@
+= Clojure 소개
+:sectnums:
+:source-language: clojure
+:imagesdir: ./img
+:stem: latexmath
+:icons: font
+   
+== Why Clojure?
+
+* 궁극적으로 생산성을 향상시켜 준다  -> 개발 기간과 비용을 줄여준다.
+
+* http://blog.cognitect.com/blog/2015/9/7/consumer-reports-uses-clojure-and-datomic-to-deliver-consumer-data[Consumer Reports 실제 사례] +
+  Consumer Reports에서 Clojure와 Datomic을 결합해 프로그램을 개발한 결과, 수주에서 수개월에
+  걸리던 작업을 며칠 만에, 팀 단위로 행해졌던 작업이 한두 명의 개발자로도 개발이
+  가능해졌다는 내용
++
+[listing]
+----
+Clojure   <-->   Datomic   <-->  DB
+                                ----
+                                 SQL DB (Oracle, MySQL, ...)
+                                 DynamoDB
+                                 Cassandra
+                                 Riak
+                                 Couchbase
+                                 Infinispan
+----
+
+* http://blog.wolfram.com/2012/11/14/code-length-measured-in-14-languages/[Code Length Measured in 14 Languages] pass:[(http://blog.wolfram.com/2012/11/14/)]
++
+image::languages.png[width="600"]
+
+
+
+== Clojure의 특징
+
+
+=== 동적 타입 언어
+
+* 개발 속도 향상
+
+* type-checking 라이브러리 이용 가능
+** https://github.com/clojure/core.typed[core.typed]: compile-time checking (type)
+** https://github.com/Prismatic/schema[schema]: run-time checking (type + value)
+
+* 제공되는 자료형의 수가 적다
++
+[quote, Alan J. Perlis]
+____
+It is better to have 100 functions operate on one data structure than 10 functions on 10
+data structures.
+____
++ 
+[listing]
+----
+Clojure Data Types
+|-- Immutables (= Values)
+|   |-- Simple values
+|   |   |-- Integers
+|   |   |-- Floating point numbers
+|   |   |-- Ratios
+|   |   |-- Strings
+|   |   |-- Characters
+|   |   |-- Symbols
+|   |   |-- Keywords
+|   |   |-- Booleans
+|   |   `-- nil
+|   |-- Collections
+|   |    |-- Lists
+|   |    |-- Vectors
+|   |    |-- Maps
+|   |    `-- Sets
+|   `-- Functions
+`-- Mutables (= References)
+    |-- Identities
+    |   |-- Atoms
+    |   |-- Refs
+    |   `-- Agents
+    |-- Vars
+    `-- Java Objects
+----
+
+** 인터페이스의 단순화: 함수의 조합이 용이
+** clojure.core의 함수 + 매크로 = 577개 +
+   cf) Java 8 rt.jar에서 제공되는 클래스 수: 4240개
+** Small is beautiful.
+
+
+=== Immutable 자료형을 기본으로 하는 함수형 언어
+
+==== 함수형 언어 등장의 이유
+
+전 세계적으로 현재의 소프트웨어 업계가 직면한 가장 큰 현안
+
+[listing]
+----
+  개발 비용의 증가 <- 개발 기간의 증가 <- 버그의 증가 <- 프로그램의 복잡도 증가  
+----
+
+* 소프트웨어의 복잡도를 제거하는 것이 최대의 해결 과제이다. 그런데 우리나라 업계는 이
+  복잡성을 당연한 것으로 받아들이는 경향이 있다.
+
+* 필연적(본질적) 복잡성은 제거할 수 없지만, 우연적(불필요한) 복잡성은 제거할 수 있다. +
+  예) 메모리 관리의 자동화 (Garbage Collection), 포인터 연산의 제거 
+
+* Immutable 자료형을 기본으로 하는 함수형 언어는 바로 이 우연적 복잡성을 제거하는 것을
+  목표로 등장했다.
+ 
+
+==== Clojure의 immutable 자료형
+ 
+* 상태(state)를 공유하지 않게 된다.
+** 상태의 공유 최소화 -> 복잡성의 최소화 -> 개발 시간/비용의 최소화
+** 함수 간의 의존성 제거 -> 함수의 조합이 용이 -> 개발의 단순화
+** 프로그래밍 단위
+*** 객체지향에서는 클래스 단위: 클래스 내 메소드들은 멤버 변수의 공유로 인해 상호 의존적
+*** 함수형 언어에서는 함수 단위
+
+* 병행(Concurrency) 처리에 유리: 멀티 코어 시대의 필연적 요구사항
+
+* Persistence(존속) 데이터 구조를 이용: 기존의 데이터를 재활용하는 방식 
+
+ 
+==== List Persistence
+
+[source]
+....
+(def a (list 1 2 3))
+....
+
+image::list-1.png[width=400]
+
+===== 리스트 요소의 추가 
+
+[source]
+....
+(def b (conj a 0))
+
+b   ; => (0 1 2 3)
+a   ; => (1 2 3)
+....
+
+image::list-2.png[width=480]
+
+
+===== 리스트 요소의 삭제
+
+[source]
+....
+(def c (rest a))
+
+c   ; => (2 3)
+a   ; => (1 2 3)
+....
+
+image::list-3.png[width=400]
+
+==== Map Persistence
+
+[source]
+....
+(def a {:a 5 :b 6 :c 7 :d 8})
+....
+
+image::map-1.png[width=600]
+  
+
+===== map 요소의 변경
+[source]
+....
+
+(def b (assoc a :c 0))
+
+b   ; => {:a 5, :b 6, :c 0, :d 8}
+a   ; => {:a 5, :b 6, :c 7, :d 8}
+....
+
+image::map-2.png[width=600]
+
+===== map 요소의 삭제 
+[source]
+....
+(def c (dissoc a :d))
+
+c   ; => {:a 5, :b 6, :c 7}
+a   ; => {:a 5, :b 6, :c 7, :d 8}
+....
+
+image::map-3.png[width=600]
+
+map 자료형은 실제로는 32진 B-tree(Balanced Tree)로 구현되어 있고, 하나의 map이 수용 가능한
+최대 요소의 수가 latexmath:[2^{32}]개이므로
+
+[stem]
+++++
+32^6  < 2^{32} < 32^7
+++++
+
+아무리 깊어도 7단계 중첩이어서 검색 속도가 아주 빠르고, 메모리 낭비도 없다.
+
+
+== 멀티 스레딩의 자동화
+
+* 멀티 스레딩 프로그래밍의 어려움 해결
+
+* Garbage Collection의 등장으로 프로그래머의 메모리 직접 관리의 부담에서 해방되었듯이,
+  STM(Software Transaction Memory)의 등장으로 멀리 스레딩 프로그래밍으로부터의 부담에서
+  해방
+
+* Clojure의 atom, ref, agent를 이용해 멀티 코어 시대에 효과적으로 대응할 수 있다.
+
+
+== JVM 상의 모든 라이브러리 이용
+
+* 신생 언어가 겪는 가장 큰 문제점(라이브러리 부족) 해결(ClojureCLR, ClojureScript) +
+  Clojure 라이브러리들 중 상당수가 Java 라이브러리를 wrapping한 것.
+
+* Java Interop을 통해 쉽게 자바 코드 호출: 단순히 Java Interop 기능을 이용해, Java 코드를
+  Clojure 코드로 바꾸어도, 소스 코드의 크기가 상당히 줄어든다.
+
+* 자바의 모든 기능과 라이브러리들을 이용할 수 있다.
+
+
+== 리습 언어
+
+** 강력한 매크로 프로그래밍이 가능하다.
+
+** 매크로 프로그래밍에 관해서는 게임 프로그램 부분에서 설명
+
+
+

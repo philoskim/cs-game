@@ -1,0 +1,212 @@
+= HTML5 Game Programming pass:[</br>] with  phaser.js
+:sectnums:
+:source-language: clojure
+
+== phaser.js 소개
+
+https://html5gameengine.com/[HTML5/JavaScript Game Engines 비교]
+
+[listing]
+----
+   pixi.js
+     ^ |
+     | v
+   phaser.js
+     ^ |
+     | v 
+   purnam
+     ^ |
+     | v
+ ClojureScript
+----
+
+== JavaScript 소스 원본과 ClojureScript + purnam 소스 비교 
+
+.JavaScript 소스 원본
+[source,jaavscript]
+....
+function ballLost () {
+    lives--;
+    livesText.text = 'lives: ' + lives;
+
+    if (lives === 0)
+        gameOver();
+    else {
+        ballOnPaddle = true;
+        ball.reset(paddle.body.x + 16, paddle.y - 16);
+        ball.animations.stop();
+    }
+}
+....
+
+.ClojureScript + purnam 소스
+[source]
+....
+(def.n ball-lost []
+  (! state.lives (dec state.lives))
+  (! state.lives-text.text (str "lives: " state.lives))
+
+  (if (zero? state.lives)
+    (game-over)
+    (do
+      (! state.ball-on-paddle true)
+      (state.ball.reset (+ state.paddle.body.x 16) (- state.paddle.y 16))
+      (state.ball.animations.stop) )))
+....
+
+
+== Lisp의 매크로 프로그래밍
+
+** 매크로 프로그래밍은 리습의 meta programming(소스 코드를 사람이 아니라 프로그램을 통해
+   변경) 방식이다.
+
+=== 매크로 이해의 핵심
+
+[big]*Homoiconicity (同形性: code as data)*
+
+[listing]
+----
+  입력          연산          출력
+-------------------------------------
+ 데이터   -->    함수     --> 데이터
+ 코드     -->   매크로    --> 코드   
+----
+
+=== 코드로서의 리스트와 데이터로의 리스트
+
+[source]
+....
+(+ 1 2 3)    ; => 6
+'(+ 1 2 3)   ; => (+ 1 2 3)
+
+(first (+ 1 2 3))   ; == (first 6)
+; >> IllegalArgumentException Don't know how to create ISeq from:
+;      java.lang.Long  clojure.lang.RT.seqFrom (RT.java:528)
+
+(first  '(+ 1 2 3))   ; => +
+(second '(+ 1 2 3))   ; => 1
+....
+
+
+=== Lisp 매크로의 특징
+
+[source]
+....
+          (1)       (2)       (3)
+소스 코드 ----> 토큰 ----> AST ----> 컴파일 ----> 실행
+....
+<1> Lexer
+<2> Parser: C 매크로의 확장 시점(Text substitution macros)
+<3> Lisp 매크로의 확장 시점(Syntactic macros) -> 추상 구문 트리를 변형 +
+    매크로 확장시 Clojure에서 제공하는 모든 함수를 사용할 수 있다.
+
+//+
+* C의 매크로, C++의 템플릿과의 비교할 때 대단히 강력하고 단순하다.
+
+* 괄호가 필요한 이유 -> 매크로 프로그래밍을 위해 필수
+** AST(Abstract Syntax Tree)를 만들기 위한 파싱이 필요 없다.
+** 연산자 우선 순위를 파악하기 위한 파싱이 필요 없다.
+** 처음에는 이질적으로 느껴지지만, 그 기능을 이해하게 되면 아름답게 보인다.
+
+
+== purnam 소개
+
+JavaScript 코드를 ClojureScript 코드로 거의 *일대일 대응*으로 옮길 수 있게 해 주는
+라이브러리로, 매크로를 이용해 구현되었다.
+
+
+=== 예제에서 사용할 JavaScript 객체의 생성
+
+[source]
+....
+;; JavaScript
+var o = {a: {b: {c:   10,
+                 add: function (x, y) { return x + y;} }}}
+
+;; ClojureScript
+(def o (clj->js {:a {:b {:c   10
+                         :add (fn [x y] (+ x y))} }}))
+....
+
+
+=== JavaScript 객체의 property 읽기
+
+[source]
+....
+;; JavaScript
+o.a.b.c;
+
+;; ClojureScript
+(aget o "a" "b" "c")
+
+;; ClojureScript + purnam
+(? o.a.b.c)
+....
+
+
+=== JavaScript 객체의 property 쓰기
+
+[source]
+....
+;; JavaScript
+o.a.b.c = 20;
+
+;; ClojureScript
+(aset o "a" "b" "c" 20)
+
+;; ClojureScript + purnam
+(! o.a.b.c 20)
+....
+
+.! 매크로 구현
+[source]
+....
+(defmacro ! [sym val]               ; sym  => o.a.b.c   val => 20
+  (let [s (str sym)                 ; s    => "o.a.b.c"
+        syms (str/split s #"\.")]   ; syms => ["o" "a" "b" "c"]
+    `(aset ~(symbol (first syms)) ~@(rest syms)          ~val)))
+                    ; => "o"        ; => ("a" "b" "c")   ; => 20
+           ; => o                 ; => "a" "b" "c"
+    ; => (aset o "a" "b" "c" 20)
+....
+
+=== JavaScript 객체의 메소드 호출
+
+[source]
+....
+;; JavaScript
+o.a.b.add(100, 200);
+
+;; ClojureScript
+(.call (aget o "a" "b" "add") (aget o "a" "b") 100 200)
+
+;; ClojureScript + purnam
+(?> o.a.b.add 100 200)
+....
+
+
+=== def.n 매크로 
+
+[source]
+....
+;; 매크로 확장 전
+(def.n do-stuff [a b c]
+  (b.func 10 10)
+  (+ a.val b.val)
+  (inc c.val))
+
+;; 매크로 1차 확장 후
+(defn do-stuff [a b c]
+  (?> b.func 10 10)
+  (+ (? a.val) (? b.val))
+  (inc (? c.val)))
+
+
+;; 매크로 2차 확장 후
+(defn do-stuff [a b c]
+  (.call (aget b "func") (aget o "b") 10 10)
+  (+ (aget a "val") (aget b "val"))
+  (inc (aget c "val")))
+....
+
+

@@ -1,0 +1,1051 @@
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.179 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.Compiler$CompilerException: java.io.FileNotFoundException: Could not locate cljsjs/phaser__init.class or cljsjs/phaser.clj on classpath., compiling:(brick/core.clj:1:1)
+ at clojure.lang.Compiler.load (Compiler.java:7239)
+    clojure.lang.RT.loadResourceScript (RT.java:371)
+    clojure.lang.RT.loadResourceScript (RT.java:362)
+    clojure.lang.RT.load (RT.java:446)
+    clojure.lang.RT.load (RT.java:412)
+    clojure.core$load$fn__5448.invoke (core.clj:5866)
+    clojure.core$load.doInvoke (core.clj:5865)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojurescript_build.core$reload_lib.invoke (core.clj:46)
+    clojurescript_build.core$handle_source_reloading_STAR_.invoke (core.clj:139)
+    clojurescript_build.core$handle_source_reloading.invoke (core.clj:145)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:158)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15786.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15832.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15783.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15586.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15592.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15592.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15595.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15589.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15607.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15693$state_machine__9517__auto____15694$fn__15699.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15693$state_machine__9517__auto____15694.invoke (auto.clj:178)
+    clojure.core.async.impl.ioc_macros$run_state_machine.invoke (ioc_macros.clj:940)
+    clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke (ioc_macros.clj:944)
+    clojure.core.async$ioc_alts_BANG_$fn__9696.invoke (async.clj:362)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.Compiler$CompilerException: java.io.FileNotFoundException: Could not locate cljsjs/phaser__init.class or cljsjs/phaser.clj on classpath., compiling:(brick/core.clj:1:1)
+ at clojure.lang.Compiler.load (Compiler.java:7239)
+    clojure.lang.RT.loadResourceScript (RT.java:371)
+    clojure.lang.RT.loadResourceScript (RT.java:362)
+    clojure.lang.RT.load (RT.java:446)
+    clojure.lang.RT.load (RT.java:412)
+    clojure.core$load$fn__5448.invoke (core.clj:5866)
+    clojure.core$load.doInvoke (core.clj:5865)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojurescript_build.core$reload_lib.invoke (core.clj:46)
+    clojurescript_build.core$handle_source_reloading_STAR_.invoke (core.clj:139)
+    clojurescript_build.core$handle_source_reloading.invoke (core.clj:145)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:158)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15786.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15832.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15783.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15586.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15592.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15592.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15595.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15589.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15607.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15693$state_machine__9517__auto____15694$fn__15699.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15693$state_machine__9517__auto____15694.invoke (auto.clj:178)
+    clojure.core.async.impl.ioc_macros$run_state_machine.invoke (ioc_macros.clj:940)
+    clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke (ioc_macros.clj:944)
+    clojure.core.async$ioc_alts_BANG_$fn__9696.invoke (async.clj:362)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.151 seconds.[0m
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.111 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.093 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.135 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.12 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.104 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.111 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.123 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.121 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.143 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.138 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.141 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.142 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.203 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.267 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.161 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.212 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.164 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.087 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.091 seconds.[0m
+notifying browser that file changed:  /brick/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.239 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 8 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/preload at line 8 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.208 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.181 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.218 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.133 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.122 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/?! at line 9 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/?! at line 10 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.126 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.128 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.141 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.139 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 7 and column 1 on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 20, column 1
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.137 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.156 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 15 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.226 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 15 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.141 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.184 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/game at line 7 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/game at line 7 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.202 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 13 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.154 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.148 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/create at line 14 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.127 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 6 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.097 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 6 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.115 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 6 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.118 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.091 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.083 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.097 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.075 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.115 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/Phaser at line 17 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.108 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.097 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.082 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.072 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.09 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.062 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.108 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.058 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.06 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.072 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.065 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.07 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.071 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.072 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.078 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.069 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.122 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 8 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.103 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 8 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.097 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 8 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.131 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: update already refers to: cljs.core/update being replaced by: breakout.core/update at line 8 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.117 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.1 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.103 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.089 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.102 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.087 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.074 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.097 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.065 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.113 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/state at line 16 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.119 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.117 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.101 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.121 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.096 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.08 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.112 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.093 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.109 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.136 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.116 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.143 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.087 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.139 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.121 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.111 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.149 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.132 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.147 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.124 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.103 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.131 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.134 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.13 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.121 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.121 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.172 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.167 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.168 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.157 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.163 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.127 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.146 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/breakout/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3144.invoke (compiler.cljc:1347)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1309)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1384)
+    cljs.closure$compile_dir.invoke (closure.clj:446)
+    cljs.closure$eval3588$fn__3589.invoke (closure.clj:486)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    cljs.closure$eval3601$fn__3602.invoke (closure.clj:500)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1683)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15812.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15858.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15809.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15612.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15621.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15615.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15633.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720$fn__15725.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/breakout/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3144.invoke (compiler.cljc:1347)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1309)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1384)
+    cljs.closure$compile_dir.invoke (closure.clj:446)
+    cljs.closure$eval3588$fn__3589.invoke (closure.clj:486)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    cljs.closure$eval3601$fn__3602.invoke (closure.clj:500)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1683)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15812.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15858.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15809.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15612.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15621.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15615.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15633.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720$fn__15725.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.148 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.148 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.173 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.169 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.126 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Use of undeclared Var breakout.core/벽돌 at line 34 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/스프라이트 at line 34 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/추가 at line 34 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/및 at line 34 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/속성 at line 34 src/breakout/core.cljs
+WARNING: Use of undeclared Var breakout.core/지정 at line 34 src/breakout/core.cljs
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.322 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.189 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.148 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/breakout/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3144.invoke (compiler.cljc:1347)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1309)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1384)
+    cljs.closure$compile_dir.invoke (closure.clj:446)
+    cljs.closure$eval3588$fn__3589.invoke (closure.clj:486)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    cljs.closure$eval3601$fn__3602.invoke (closure.clj:500)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1683)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15812.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15858.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15809.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15612.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15621.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15615.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15633.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720$fn__15725.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720.invoke (auto.clj:178)
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.183 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.217 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.31 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.497 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.352 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.254 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.307 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.25 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.271 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.29 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.3 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 23 and column 1 on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 89, column 1
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 113 and column 5 on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 114, column 1
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 134, column 48
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 134, column 48
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.461 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.552 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.469 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.407 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.498 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.467 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.53 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.593 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.519 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.581 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.305 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.365 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.434 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 79 and column 1 on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 169, column 1
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.414 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.362 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.376 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.524 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.426 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.462 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.326 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.311 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.336 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.304 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 135, column 4
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.395 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.367 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.411 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.371 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.39 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.345 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.335 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.384 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.414 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.39 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.385 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/breakout/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3144.invoke (compiler.cljc:1347)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1309)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1384)
+    cljs.closure$compile_dir.invoke (closure.clj:446)
+    cljs.closure$eval3588$fn__3589.invoke (closure.clj:486)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    cljs.closure$eval3601$fn__3602.invoke (closure.clj:500)
+    cljs.closure$eval3540$fn__3541$G__3531__3548.invoke (closure.clj:391)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1683)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15812.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15858.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15809.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15612.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15618.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15621.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15615.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15633.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720$fn__15725.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15719$state_machine__9543__auto____15720.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 63, column 41
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 62, column 41
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 62, column 41
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /home/philos/ar/new/_doc/cs-game/prj/breakout/src/breakout/core.cljs, line 62, column 41
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.27 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.386 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.278 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.509 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.39 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.416 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.464 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.445 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.485 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.394 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.313 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.216 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.562 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.709 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.282 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.189 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Required namespace not provided for breakout.core
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.15 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 1.266 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.51 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.724 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.781 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.613 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.4 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.637 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.677 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.529 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.594 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.332 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.291 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.485 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.361 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.413 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.429 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.349 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+WARNING: Required namespace not provided for breakout.core
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.071 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.314 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.44 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.296 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.359 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.438 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.481 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.413 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.427 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.346 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.392 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.474 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.397 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.413 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.495 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.422 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.403 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.173 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.201 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.235 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.739 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.697 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.194 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.166 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.75 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.115 seconds.[0m
+notifying browser that file changed:  /breakout/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.152 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /breakout/core.js
