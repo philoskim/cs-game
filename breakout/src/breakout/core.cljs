@@ -1,4 +1,3 @@
-;58
 (ns breakout.core
   (:refer-clojure :exclude [update])
   (:require cljsjs.phaser
@@ -72,11 +71,6 @@
       :else
       (! ball.body.velocity.x (* 10 diff)) )))
        
-;; (defn init-game []
-;;   (dom/destroy-children! (dom/by-id "phaser-example"))
-;;   (js/Phaser.Game. 800 600 js/Phaser.AUTO  "phaser-example"
-;;                    (obj :preload #'preload :create #'create :update update)))
-
 
 (def.n preload [game]
   (game.load.atlas "breakout" "assets/games/breakout/breakout.png" "assets/games/breakout/breakout.json")
