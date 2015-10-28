@@ -178,7 +178,7 @@ o.a.b.c = 20;
 o.a.b.add(100, 200);
 
 ;; ClojureScript
-(.call (aget o "a" "b" "add") (aget o "a" "b") 100 200)
+((aget o "a" "b" "add") 100 200)
 
 ;; ClojureScript + purnam
 (?> o.a.b.add 100 200)
@@ -204,7 +204,7 @@ o.a.b.add(100, 200);
 
 ;; 매크로 2차 확장 후
 (defn do-stuff [a b c]
-  (.call (aget b "func") (aget o "b") 10 10)
+  ((aget b "func") 10 10)
   (+ (aget a "val") (aget b "val"))
   (inc (aget c "val")))
 ....
